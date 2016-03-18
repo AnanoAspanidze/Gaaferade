@@ -22,8 +22,10 @@ public class GzebisScript : MonoBehaviour {
     {
         gameObject.GetComponent<GameController>().onRoadMouseDown();
 
-        var GameObjectPosition = gameObject.transform.position;
-        gameObject.transform.position = new Vector3(GameObjectPosition.x, GameObjectPosition.y, -1);   
+        gameObject.GetComponent<SpriteRenderer>().sortingLayerName = "yvelazeCin";
+
+        //var GameObjectPosition = gameObject.transform.position;
+        //gameObject.transform.position = new Vector3(GameObjectPosition.x, GameObjectPosition.y, -1);   
     }
 
 

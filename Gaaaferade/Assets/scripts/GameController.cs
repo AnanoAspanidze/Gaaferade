@@ -27,8 +27,10 @@ public class GameController : MonoBehaviour {
     {
         for (int i = 0; i < gzebi.Count; i++)
         {
-            var GameObjectPosition = gzebi[i].transform.position;
-            gzebi[i].transform.position = new Vector3(GameObjectPosition.x, GameObjectPosition.y, 0);
+            //var GameObjectPosition = gzebi[i].transform.position;
+            gzebi[i].GetComponent<SpriteRenderer>().sortingLayerName = "Default";
+       
+            //gzebi[i].transform.position = new Vector3(GameObjectPosition.x, GameObjectPosition.y, 0);
         }      
     }
 
